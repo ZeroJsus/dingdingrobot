@@ -1,0 +1,10 @@
+dist/
+deploy_versions/
+.temp/
+.rn_temp/
+.vscode/
+node_modules/
+.DS_Store
+.pac
+.tags
+coverage/
