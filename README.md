@@ -1,8 +1,10 @@
 # dingdingrobot project
 
+## nodejs 链接钉钉机器人发送文本的插件 支持typscript
+
 ```javascript
-import {
-  DMessage
+import DMessage, {
+  MSG_TYPE
 } from 'dingdingrobot';
 
 const dmessage = new DMessage({
@@ -12,6 +14,6 @@ const dmessage = new DMessage({
 
 dmessage.send({
   text: 'xxx',
-  msgtype: 'text'
+  msgtype: MSG_TYPE.XXX
 });
 ```

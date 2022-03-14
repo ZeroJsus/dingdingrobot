@@ -1,13 +1,16 @@
 {
   "name": "@zerojsus/dingdingrobot",
   "version": "1.0.0",
-  "description": "",
+  "description": "nodejs调用钉钉机器人插件",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "jest",
     "tsc": "typescript"
   },
-  "keywords": [],
+  "keywords": ["dingdingrobot", "nodejs", "dingding", "typescript"],
   "author": "zerojsus",
   "license": "ISC",
   "dependencies": {
