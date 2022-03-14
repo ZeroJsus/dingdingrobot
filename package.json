@@ -1,6 +1,6 @@
 {
   "name": "@zerojsus/dingdingrobot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "nodejs调用钉钉机器人插件",
   "main": "dist/index.js",
   "files": [
@@ -8,13 +8,22 @@
   ],
   "scripts": {
     "test": "jest",
-    "tsc": "typescript"
+    "tsc": "typescript",
+    "build": "rollup --config"
   },
-  "keywords": ["dingdingrobot", "nodejs", "dingding", "typescript"],
+  "keywords": [
+    "dingdingrobot",
+    "nodejs",
+    "dingding",
+    "typescript"
+  ],
   "author": "zerojsus",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^17.0.21",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "typescript": "^4.6.2"
   },
   "devDependencies": {
@@ -27,6 +36,8 @@
     "babel-jest": "^27.5.1",
     "eslint": "^8.10.0",
     "jest": "^27.5.1",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "rollup-plugin-uglify": "^6.0.4",
     "ts-node": "^10.7.0"
   }
 }
