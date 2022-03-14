@@ -2,7 +2,7 @@
  * @Author: yangrongxin
  * @Date: 2022-03-12 22:27:36
  * @LastEditors: yangrongxin
- * @LastEditTime: 2022-03-13 15:44:10
+ * @LastEditTime: 2022-03-14 09:38:14
  */
 
 import {
@@ -14,6 +14,22 @@ import {
 } from '../config/http';
 
 export default class DMessage extends Http implements IDMessage {
+  constructor(config: {
+    secret: string,
+    access_token: string
+  }) {
+    super();
+    const {
+      secret,
+      access_token
+    } = config;
+    if ( secret && access_token ) {
+      Http.secret = secret;
+      Http.access_token = access_token;
+    } else {
+      throw new Error('请传入配置信息！');
+    }
+  }
 
   /**
    * 向钉钉控制台发送一条消息

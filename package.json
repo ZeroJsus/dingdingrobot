@@ -1,5 +1,5 @@
 {
-  "name": "dingdingrobot",
+  "name": "@zerojsus/dingdingrobot",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
     "tsc": "typescript"
   },
   "keywords": [],
-  "author": "",
+  "author": "zerojsus",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^17.0.21",
