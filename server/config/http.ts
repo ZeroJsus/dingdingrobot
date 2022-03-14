@@ -2,7 +2,7 @@
  * @Author: yangrongxin
  * @Date: 2022-03-11 17:43:07
  * @LastEditors: yangrongxin
- * @LastEditTime: 2022-03-14 09:44:09
+ * @LastEditTime: 2022-03-14 14:03:57
  */
 
 import crypto from 'crypto';
@@ -41,7 +41,6 @@ export class Http {
   
   // 初始化当前的数据请求
   sendMsg(data: MsgTypes, resolveFn?: (params: unknown) => void, rejectFn?: (params: unknown) => void) {
-    console.log('Http', Http);
     const {
       hostname,
       port,
@@ -83,11 +82,11 @@ export class Http {
     const req = request(
       options,
       (res) => {
-        console.log(`STATUS: ${res.statusCode}`);
-        console.log(`HEADERS: ${JSON.stringify(res.headers)}`);
+        // console.log(`STATUS: ${res.statusCode}`);
+        // console.log(`HEADERS: ${JSON.stringify(res.headers)}`);
         res.setEncoding('utf8');
         res.on('data', (chunk) => {
-          console.log('chunk', chunk);
+          // console.log('chunk', chunk);
           resolveFn && resolveFn(chunk);
         });
         res.on('end', () => {
