@@ -2,7 +2,7 @@
  * @Author: yangrongxin
  * @Date: 2022-03-11 17:43:07
  * @LastEditors: yangrongxin
- * @LastEditTime: 2022-03-14 14:03:57
+ * @LastEditTime: 2022-03-25 15:19:50
  */
 
 import crypto from 'crypto';
@@ -40,7 +40,7 @@ export class Http {
 
   
   // 初始化当前的数据请求
-  sendMsg(data: MsgTypes, resolveFn?: (params: unknown) => void, rejectFn?: (params: unknown) => void) {
+  protected sendMsg(data: MsgTypes, resolveFn?: (params: unknown) => void, rejectFn?: (params: unknown) => void) {
     const {
       hostname,
       port,
