@@ -2,30 +2,30 @@
  * @Author: yangrongxin
  * @Date: 2022-03-25 15:20:35
  * @LastEditors: yangrongxin
- * @LastEditTime: 2022-03-25 16:06:43
+ * @LastEditTime: 2022-09-18 14:31:42
  */
 
 import {
-  commonWapper
-} from './common';
-import { MSG_TYPE } from "../server/types/index";
-commonWapper(
+  commonWrapper
+} from './common'
+import { MsgType } from '../server/types/index'
+commonWrapper(
   '测试钉钉文本的发送',
   {
-    [MSG_TYPE.ACTIONCARD]: {
+    [MsgType.ActionCard]: {
       title: '这是单个消息',
       text: 'text #123',
       singleTitle: '阅读全文',
       singleURL: 'https://www.dingtalk.com/'
     },
-    msgtype: MSG_TYPE.ACTIONCARD
+    msgtype: MsgType.ActionCard
   }
 )
 
-commonWapper(
+commonWrapper(
   '测试钉钉文本的发送',
   {
-    [MSG_TYPE.ACTIONCARD]: {
+    [MsgType.ActionCard]: {
       title: '这是一个整体消息',
       text: 'text #123',
       btns: [
@@ -35,6 +35,6 @@ commonWapper(
         }
       ]
     },
-    msgtype: MSG_TYPE.ACTIONCARD
+    msgtype: MsgType.ActionCard
   }
 )

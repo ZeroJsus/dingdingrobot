@@ -2,17 +2,17 @@
  * @Author: yangrongxin
  * @Date: 2022-03-25 15:20:35
  * @LastEditors: yangrongxin
- * @LastEditTime: 2022-03-25 16:28:40
+ * @LastEditTime: 2022-09-18 14:28:44
  */
 
 import {
-  commonWapper
-} from './common';
-import { MSG_TYPE } from "../server/types/index";
-commonWapper(
+  commonWrapper
+} from './common'
+import { MsgType } from '../server/types/index'
+commonWrapper(
   '测试钉钉文本的发送',
   {
-    [MSG_TYPE.FEEDCARD]: {
+    [MsgType.FeedCard]: {
       links: [
         {
           title: '跳转到我的首页',
@@ -21,6 +21,6 @@ commonWapper(
         }
       ]
     },
-    msgtype: MSG_TYPE.FEEDCARD
+    msgtype: MsgType.FeedCard
   }
 )

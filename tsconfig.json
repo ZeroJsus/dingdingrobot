@@ -12,5 +12,8 @@
     "emitDecoratorMetadata": true, /* 装饰器支持. */
     "declaration": true
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

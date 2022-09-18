@@ -5,8 +5,8 @@
  * @LastEditTime: 2022-03-13 15:42:05
  */
 
-import DMessage from './tools/message';
+import DMessage from './tools/message'
 
 export {
   DMessage
-};
+}

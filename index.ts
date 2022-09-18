@@ -2,17 +2,17 @@
  * @Author: yangrongxin
  * @Date: 2022-03-13 00:16:19
  * @LastEditors: yangrongxin
- * @LastEditTime: 2022-03-14 13:54:55
+ * @LastEditTime: 2022-09-18 14:54:33
  */
 
 import {
   DMessage
-} from './server/index';
+} from './server/index'
 import {
-  MSG_TYPE
-} from './server/types/index';
+  MsgType
+} from './server/types/index'
 
-export default DMessage;
+export default DMessage
 export {
-  MSG_TYPE
-};
+  MsgType
+}
