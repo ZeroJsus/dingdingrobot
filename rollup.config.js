@@ -6,13 +6,13 @@
  * @LastEditTime: 2022-03-14 17:22:09
  */
 
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import babel from 'rollup-plugin-babel';
-import typescript from 'rollup-plugin-typescript2';
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import babel from 'rollup-plugin-babel'
+import typescript from 'rollup-plugin-typescript2'
 import {
   uglify
-} from 'rollup-plugin-uglify';
+} from 'rollup-plugin-uglify'
 
 export default {
   input: './index.ts',
@@ -28,10 +28,10 @@ export default {
   // moduleContext,
   // legacy
 
-  output: {  // 必须 (如果要输出多个，可以是一个数组)
+  output: { // 必须 (如果要输出多个，可以是一个数组)
     // 核心选项
-    file: './dist/index.js',    // 必须
-    format: 'cjs',  // 必须
+    file: './dist/index.js', // 必须
+    format: 'cjs', // 必须
     // name,
     // globals,
 
@@ -41,7 +41,7 @@ export default {
     // footer,
     // intro,
     // outro,
-    sourcemap: true,
+    sourcemap: true
     // sourcemapFile,
     // interop,
 
@@ -60,4 +60,4 @@ export default {
     typescript(),
     uglify()
   ]
-};
+}

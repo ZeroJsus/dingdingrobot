@@ -1,22 +1,26 @@
 {
   "name": "@zerojsus/dingdingrobot",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "nodejs调用钉钉机器人插件",
   "main": "dist/index.js",
+  "homepage": "https://www.apprx.cn/",
   "files": [
     "dist"
   ],
   "scripts": {
     "test": "jest",
     "tsc": "typescript",
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "lint": "ts-standard",
+    "lint:fix": "ts-standard --fix"
   },
-  "keywords": [
-    "dingdingrobot",
-    "nodejs",
-    "dingding",
-    "typescript"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZeroJsus/dingdingrobot"
+  },
+  "bugs": {
+    "url": "https://github.com/ZeroJsus/dingdingrobot/issues"
+  },
   "author": "zerojsus",
   "license": "ISC",
   "dependencies": {
@@ -38,6 +42,13 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-typescript2": "^0.31.2",
     "rollup-plugin-uglify": "^6.0.4",
-    "ts-node": "^10.7.0"
-  }
+    "ts-node": "^10.7.0",
+    "ts-standard": "^11.0.0"
+  },
+  "keywords": [
+    "dingdingrobot",
+    "nodejs",
+    "dingding",
+    "typescript"
+  ]
 }

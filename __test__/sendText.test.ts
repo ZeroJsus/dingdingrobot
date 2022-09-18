@@ -2,19 +2,19 @@
  * @Author: yangrongxin
  * @Date: 2022-03-13 00:14:06
  * @LastEditors: yangrongxin
- * @LastEditTime: 2022-03-13 15:53:09
+ * @LastEditTime: 2022-09-18 14:29:38
  */
 
 import {
-  commonWapper
-} from './common';
-import { MSG_TYPE } from "../server/types/index";
-commonWapper(
+  commonWrapper
+} from './common'
+import { MsgType } from '../server/types/index'
+commonWrapper(
   '测试钉钉文本的发送',
   {
     text: {
       content: '测试吃水果'
     },
-    msgtype: MSG_TYPE.TEXT
+    msgtype: MsgType.Text
   }
 )
